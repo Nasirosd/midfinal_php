@@ -1,0 +1,119 @@
+/***
+
+====================================================================
+    team Section
+====================================================================
+
+***/
+
+.team-main-box-1 {
+    margin-top: 30px;
+
+    .team-box-items {
+        border-left: 1px solid var(--theme-color1);
+        border-right: 1px solid var(--theme-color1);
+        padding: 55px 0;
+        margin-left: 28px;
+        margin-right: 28px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 28px;
+            left: -28px;
+            right: 0px;
+            width: 115%;
+            content: "";
+            border-top: 1px solid var(--theme-color1);
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 28px;
+            left: -28px;
+            right: 0px;
+            width: 115%;
+            content: "";
+            border-top: 1px solid var(--theme-color1);
+        }
+
+        .thumb {
+            max-width: 315px;
+            text-align: center;
+            margin: 0 auto;
+            background: var(--theme-color-white);
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            padding: 24px;
+            overflow: hidden;
+            position: relative;
+            z-index: 9;
+
+            img {
+                @include imgw;
+                background-size: cover;
+                transition: 0.5s;
+                width: 100%;
+                
+                &:nth-child(1){
+                    transform: translatex(50%) scalex(2);
+                    opacity: 0;
+                    filter: blur(10px);
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                    bottom: 0;
+                    width: calc(100% - 48px);
+                    height: calc(100% - 48px);
+                    right: 0;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .team-content {
+        text-align: center;
+
+        .title {
+             a {
+                background-position: 0 95%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                display: inline;
+                @include transition;
+                
+                &:hover {
+                    color: var(--theme-color1);
+                    background-size: 100% 2px;
+                    background-image: linear-gradient(180deg, var(--theme-color1) 0%, var(--theme-color1) 100%);
+                }
+            }
+        }
+
+        
+    }
+
+    &:hover {
+        .team-box-items {
+            .thumb {
+                img {
+                    filter: grayscale(100%);
+                    transform: scale(1.1);
+                    &:nth-child(1) {
+                        transform: translatex(0) scalex(1);
+                        opacity: 1;
+                        filter: blur(0);
+                    }
+                    &:nth-child(2) {
+                        transform: translatex(-50%) scalex(2);
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+
+                }
+            }
+        }
+    }
+}

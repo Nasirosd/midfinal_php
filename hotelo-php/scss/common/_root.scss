@@ -1,0 +1,117 @@
+//Root
+
+//main theme colors
+$theme-color1: #B99D75;
+$theme-color2: #144443;
+$theme-color3: #f4f5f8;
+$theme-color4: #0f0f0f;
+
+//text colors when theme color bg
+$theme-color1-text-color: #fff;
+$theme-color2-text-color: #fff;
+$theme-color3-text-color: #fff;
+$theme-color4-text-color: #fff;
+
+:root {
+  //main theme colors
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+  --theme-color4: #{$theme-color3};
+
+  //rgb version of those theme colors
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+  --theme-color3-rgb: #{hexToRGB($theme-color3)};
+  --theme-color4-rgb: #{hexToRGB($theme-color4)};
+
+  //text colors when theme color bg
+  --theme-color1-text-color: #{$theme-color1-text-color};
+  --theme-color2-text-color: #{$theme-color2-text-color};
+  --theme-color3-text-color: #{$theme-color3-text-color};
+  --theme-color4-text-color: #{$theme-color4-text-color};
+
+  --bg-theme-color1: var(--theme-color1);
+  --bg-theme-color2: var(--theme-color2);
+  --bg-theme-color3: var(--theme-color3);
+  --border-theme-color1: var(--theme-color1);
+  --border-theme-color2: var(--theme-color2);
+  --border-theme-color3: var(--theme-color3);
+
+
+  //other colors
+  --body-bg: #fff;
+  --theme-color-white: #ffffff;
+  --theme-color-white-rgb: 255, 255, 255;
+  --theme-color-light: #f8f5f0;
+  --theme-color-gray: #f6f6f6;
+  --theme-color-silver: #eee;
+  --theme-color-black: #000000;
+  --theme-color-black-rgb: 0, 0, 0;
+
+  //text heading color
+  --text-color: #555;
+  --headings-color: #000;
+  --link-color: #B99D75;
+  --link-hover-color: #B99D75;
+
+  //font family
+  --body-font-family:  "Jost", sans-serif;
+  --heading-font-family: "Source Serif 4", serif;
+  --style-font: "Oswald", sans-serif;
+
+  //body
+  --body-font-size: 16px;
+  --body-line-height: 1.9;
+  --body-font-weight: 400;
+
+  //heading font size + weight
+  --line-height-heading-h1: 1em;
+  --line-height-heading: 1.3em;
+  --line-height-heading-small: 1.4em;
+
+  --h1-font-size: 180px;
+  --h2-font-size: 70px;
+  --h3-font-size: 32px;
+  --h4-font-size: 24px;
+  --h5-font-size: 18px;
+  --h6-font-size: 14px;
+
+  --h1-font-weight: 400;
+  --h2-font-weight: 400;
+  --h3-font-weight: 500;
+  --h4-font-weight: 500;
+  --h5-font-weight: 600;
+  --h6-font-weight: 600;
+
+  //section sub title
+  --sec-title-subtitle-color: #555;
+  --sec-title-subtitle-font-size: 12px;
+  --sec-title-subtitle-font-family: var(--body-font-family);
+  --sec-title-subtitle-font-weight: 600;
+  --sec-title-subtitle-line-height: 1;
+
+  //section title
+  --sec-title-color:                 var(--headings-color);
+  --sec-title-font-size:             var(var(--h2-font-size));
+  --sec-title-font-family:           var(--heading-font-family);
+  --sec-title-font-weight:           var(--h2-font-weight);
+
+  //news details page
+  --theme-light-background: #f8f6f1;
+  --theme-light-background-text-color: var(--headings-color);
+  --theme-black:        #222429;
+
+
+  //container
+  --container-width: 1340px;
+  --small-container-width: 1000px;
+  --large-container-width: 1550px;
+  --container-pt:    125px;
+  --container-pb:    125px;
+
+  // Gradient 1
+  --gradient-1: linear-gradient(99deg, #C8F169 0%, #039397 93.92%);
+  --gradient-2: linear-gradient(to left, rgba(var(--theme-color2-rgb), 1) 0%, rgba(var(--theme-color2-rgb), 0.7) 100%);
+  --gradient-3: linear-gradient(-135deg, rgba(23, 23, 23, 0) 50%, var(--theme-color2) 100%);
+}

@@ -1,0 +1,115 @@
+/* Hotelo - Hotel Booking Html Template
+
+Template Name: Hotelo
+Version: 1.0.0
+License: copyright commercial
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global Settings
+4. Main Header / TWO / Three / Four / Five
+5. Sticky Header
+6. Mobile Menu
+7. Section Title
+8. Page Title
+9. Main Slider
+10. Banner Section / Two / Three / Four
+11. Features Section / Two / Three / Four / Five / Six
+12. About Section / Two / Three / Four / Five / Six
+13. Services Section / Two / Three / Four / Five
+14. Map Section
+15. Call To Action / Two / Three / Four / Five
+16. Locations Section / Two
+17. Offer Section / Two / Three / Four
+18. FAQ's Sectiom / Two
+19. Work Section
+20. Fun Fact Section / Two
+21. Project Section / Two / Three
+22. Testimonial Section / Two / Three / Four
+23. Why Choose Us / Two / Three
+24. Industries Section
+25. Pricing Section
+26. team Section / Two
+27. Contact Sectiom / Two / Three / Four
+28. News Section / Two
+29. Clients Section
+30. Main Footer
+**********************************************/
+
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+@import "common/root.scss";
+@import "common/mixing.scss";
+@import "common/loader.scss";
+@import "common/boxed-layout.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url("animate.css");
+@import url("swiper.min.css");
+@import url("jquery.fancybox.min.css");
+@import url("nice-select.css");
+@import url("jquery-ui.css");
+@import url("linear.css");
+@import url("fontawesome-free.css");
+@import url("fontawesome.css");
+@import url("flaticon.css");
+@import url("flaticon-hotel.css");
+@import url("flaticon-set-business.css");
+@import url("tm-bs-mp.css");
+@import url("flatpickr.min.css");
+@import url("tm-utility-classes.css");
+
+// import SCSS components one by one
+@import "reset.scss";
+@import "button.scss";
+@import "animate-icon.scss";
+@import "accordion.scss";
+@import "search-popup.scss";
+@import "header.scss";
+@import "helping.scss";
+@import "mobile-menu.scss";
+@import "section-title.scss";
+@import "main-slider.scss";
+@import "banner.scss";
+@import "features.scss";
+@import "about.scss";
+@import "services.scss";
+@import "map.scss";
+@import "call-to-action.scss";
+@import "locations.scss";
+@import "special-offer.scss";
+@import "faqs.scss";
+@import "work.scss";
+@import "_how-we-work.scss";
+@import "funfact.scss";
+@import "marquee.scss";
+@import "room.scss";
+@import "testimonials.scss";
+@import "video.scss";
+@import "why-choose-us.scss";
+@import "pricing.scss";
+@import "preloader.scss";
+@import "team.scss";
+@import "contact.scss";
+@import "news.scss";
+@import "clients.scss";
+@import "new_class.scss";
+@import "growth.scss";
+
+@import "shop/loader.scss";
+
+//inner
+@import "inner/page-title.scss";
+@import "inner/404.scss";
+@import "inner/service-details.scss";
+@import "inner/project-details.scss";
+@import "inner/news-details.scss";
+@import "inner/news-sidebar.scss";
+@import "inner/news-comment.scss";
+@import "inner/team-details.scss";
+@import "inner/contact-page.scss";
+
+@import "footer.scss";
