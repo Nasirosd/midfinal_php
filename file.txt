@@ -1,0 +1,7 @@
+ID,    Name,    Batch,   Result
+101,   Rabeya,  pwad73,  PASS
+102,   Nela,    pwad73,  PASS
+103,   Farjana, pwad73,  FAIL
+104,   Sumaiya, pwad73,  PASS
+105,   Rokon,   pwad73,  PASS
+106,   Rifat,   pwad73,  FAIL
